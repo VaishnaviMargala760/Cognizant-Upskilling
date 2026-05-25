@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+Phone:
+<input type="text" onblur="validatePhone()">
+
+<br><br>
+
+<select onchange="showFee(this.value)">
+
+<option>Select Event</option>
+<option value="100">Music</option>
+<option value="200">Workshop</option>
+
+</select>
+
+<p id="fee"></p>
+
+<button onclick="showConfirm()">
+Submit
+</button>
+
+<br><br>
+
+<img src="https://via.placeholder.com/200"
+ondblclick="enlarge(this)">
+
+<br><br>
+
+<textarea onkeyup="countChars(this)"></textarea>
+
+<p id="count"></p>
+
+<script>
+
+function validatePhone(){
+alert("Phone validated");
+}
+
+function showFee(value){
+document.getElementById("fee").innerHTML =
+"Fee: " + value;
+}
+
+function showConfirm(){
+alert("Registration submitted");
+}
+
+function enlarge(img){
+img.style.width = "400px";
+}
+
+function countChars(text){
+document.getElementById("count").innerHTML =
+text.value.length;
+}
+
+</script>
+
+</body>
+
+</html>
