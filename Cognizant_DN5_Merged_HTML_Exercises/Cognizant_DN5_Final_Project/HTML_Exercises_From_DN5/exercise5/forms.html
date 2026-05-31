@@ -1,0 +1,78 @@
+<!-- Exercise 5 HTML -->
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+
+    <style>
+
+    form{
+        width: 300px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<form onsubmit="showMessage(); return false;">
+
+<input type="text"
+placeholder="Enter Name"
+required
+autofocus>
+
+<br><br>
+
+<input type="email"
+placeholder="Enter Email"
+required>
+
+<br><br>
+
+<input type="date" required>
+
+<br><br>
+
+<select required>
+
+<option>Select Event</option>
+<option>Music</option>
+<option>Workshop</option>
+
+</select>
+
+<br><br>
+
+<textarea placeholder="Message"></textarea>
+
+<br><br>
+
+<button type="submit">
+Register
+</button>
+
+<br><br>
+
+<output id="result"></output>
+
+</form>
+
+<script>
+
+function showMessage(){
+
+document.getElementById("result").innerHTML =
+"Registration Successful";
+
+}
+
+</script>
+
+</body>
+
+</html>

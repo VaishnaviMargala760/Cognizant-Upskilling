@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="form">
+
+<input type="text" name="username">
+<input type="email" name="email">
+
+<button type="submit">
+Submit
+</button>
+
+</form>
+
+<p id="error"></p>
+
+<script>
+
+document.getElementById("form")
+.addEventListener("submit", function(event){
+
+event.preventDefault();
+
+const form = event.target;
+
+const name = form.elements["username"].value;
+
+if(name === ""){
+
+document.getElementById("error").innerHTML =
+"Name Required";
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
