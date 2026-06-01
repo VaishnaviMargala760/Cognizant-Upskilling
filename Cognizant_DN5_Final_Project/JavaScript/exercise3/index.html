@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="events"></div>
+
+<script>
+
+const events = [
+{name:"Music", seats:10},
+{name:"Dance", seats:0}
+];
+
+events.forEach(event => {
+
+if(event.seats > 0){
+
+document.getElementById("events").innerHTML +=
+event.name + "<br>";
+
+}
+
+});
+
+try{
+
+let seats = 0;
+
+if(seats <= 0){
+throw "No Seats Available";
+}
+
+}catch(error){
+
+console.log(error);
+
+}
+
+</script>
+
+</body>
+</html>

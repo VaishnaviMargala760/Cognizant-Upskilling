@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<select onchange="filterEvents(this.value)">
+<option>Music</option>
+<option>Dance</option>
+</select>
+
+<button onclick="register()">
+Register
+</button>
+
+<input type="text" onkeydown="search()">
+
+<script>
+
+function register(){
+alert("Registered");
+}
+
+function filterEvents(value){
+console.log(value);
+}
+
+function search(){
+console.log("Searching...");
+}
+
+</script>
+
+</body>
+</html>
